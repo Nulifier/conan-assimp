@@ -58,6 +58,7 @@ class LibnameConan(ConanFile):
         cmake.definitions["ASSIMP_NO_EXPORT"] = self.options.noExport
         cmake.definitions["ASSIMP_BUILD_ASSIMP_TOOLS"] = False
         cmake.definitions["ASSIMP_BUILD_TESTS"] = False
+        cmake.definitions["ASSIMP_INSTALL_PDB"] = False
 
         if self.settings.os != 'Windows':
             cmake.definitions['CMAKE_POSITION_INDEPENDENT_CODE'] = self.options.fPIC

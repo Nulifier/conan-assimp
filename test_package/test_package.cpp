@@ -1,8 +1,9 @@
-#include <cstdlib>
-#include <iostream>
+#include <assimp/Importer.hpp>
 
 int main()
 {
-    std::cout << "Bincrafters\n";
+    // Create an importer
+    Assimp::Importer importer;
+
     return EXIT_SUCCESS;
 }
